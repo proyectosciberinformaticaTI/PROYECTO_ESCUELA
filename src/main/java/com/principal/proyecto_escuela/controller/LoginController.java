@@ -1,18 +1,19 @@
 package com.principal.proyecto_escuela.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
-@RequestMapping
+@Controller
 public class LoginController {
 
 
-
-
-
-
+    @RequestMapping(value = "/inicio", method = RequestMethod.GET)
+    public String index() {
+        System.out.println("inciiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+        return "index";
+    }
 
 
 }
